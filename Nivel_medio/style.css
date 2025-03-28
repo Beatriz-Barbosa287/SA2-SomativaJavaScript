@@ -21,7 +21,9 @@ body {
     /* Remove a margem padrão do body */
     margin: 0;
 }
-
+h5, h3{
+    color: white;
+}
 /* Estilos para o contêiner que segura as luzes do semáforo */
 .container {
     /* Utiliza o layout flexbox dentro do container */
