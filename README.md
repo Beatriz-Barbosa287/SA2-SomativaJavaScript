@@ -30,3 +30,4 @@ NÍVEL DIFÍCIL - JOGO DA VELHA
             ->Primeiro foi preciso definir ações em caso de vitória 
             ->Para isso utilizamos a condicional if else
             ->Assim a verificação de vitória é realizada atravez de outra função que esta relacionada a condicional
+    -Na hora de reiniciar o jogo foi necessario fazer um EventListener para o click do botão iniciar;
