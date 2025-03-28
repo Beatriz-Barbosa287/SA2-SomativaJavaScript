@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da Velha-3T DEVSENAI</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo -->
+    <title>Jogo da Velha em JavaScript</title> <!-- Título da página -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo de estilos CSS -->
 </head>
 <body>
     <div class="jogo">
-        <h1>Jogo da Velha</h1>
-        <div class="tabuleiro">
-          <div class="celula" data-celula></div>
-          <div class="celula" data-celula></div>
-          <div class="celula" data-celula></div>
-          <div class="celula" data-celula></div>
-          <div class="celula" data-celula></div>
-          <div class="celula" data-celula></div>
-          <div class="celula" data-celula></div>
-          <div class="celula" data-celula></div>
-          <div class="celula" data-celula></div>
-        </div>
-        <div class="ganhador" data-ganhador>
-            <p>X Venceu!</p>
-            <button>Reiniciar</button>
-        </div>
-       
-        
-      </div>
-</body>
-<script src="script.js"></script>
-</html>
+      <h5>3TDEV - SESI/SENAI 2025</h5></BR></BR></BR></BR> <!-- Contêiner principal do jogo -->
+        <h1>Jogo da Velha</h1> <!-- Título do jogo -->
 
+        <div class="tabuleiro" id="tabuleiro"> <!-- Tabuleiro do jogo -->
+            <!-- Cada célula representa uma posição no tabuleiro -->
+            <div class="celula" data-celula></div> <!-- Célula 1 -->
+            <div class="celula" data-celula></div> <!-- Célula 2 -->
+            <div class="celula" data-celula></div> <!-- Célula 3 -->
+            <div class="celula" data-celula></div> <!-- Célula 4 -->
+            <div class="celula" data-celula></div> <!-- Célula 5 -->
+            <div class="celula" data-celula></div> <!-- Célula 6 -->
+            <div class="celula" data-celula></div> <!-- Célula 7 -->
+            <div class="celula" data-celula></div> <!-- Célula 8 -->
+            <div class="celula" data-celula></div> <!-- Célula 9 -->
+        </div>
+
+        <p id="status"></p> <!-- Exibe o status do jogo (ex.: "Vez do jogador X" ou "Jogador X venceu!") -->
+
+        <button id="reiniciar">Reiniciar</button> <!-- Botão para reiniciar o jogo -->
+    </div>
+  
+
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript que contém a lógica do jogo -->
+</body>
+</html>
