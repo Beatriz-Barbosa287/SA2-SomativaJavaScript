@@ -1,13 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piano Simples</title>
-</head>
-<body>
-    <div class="piano-container"></div>
-</body>
-<script src="script.js"></script>
-</html>
+<html lang="">
+  <head>
+    <!-- Configuração da viewport para tornar o site responsivo em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    
+    <!-- Define o título da página exibido na aba do navegador -->
+    <title>Playable Piano</title>
+    
+    <!-- Importa o arquivo CSS externo para estilizar a página -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+    <!-- Contêiner principal para organizar o conteúdo da página -->
+    <div class="container">
+      
+      <!-- Título principal do piano virtual -->
+      <h1>Piano Virtual</h1>
 
+      <!-- Div que contém todas as teclas do piano -->
+      <div class="piano">
+          
+        <!-- Teclas do piano, cada tecla tem a classe "key" e pode ser "white" ou "black" -->
+        <!-- O atributo data-note contém a nota musical associada à tecla -->
+        
+        <div class="key white" data-note="C">C</div>
+        <div class="key black" data-note="C">C#</div>
+        <div class="key white" data-note="D">D</div>
+        <div class="key black" data-note="D">D#</div>
+        <div class="key white" data-note="E">E</div>
+        <div class="key white" data-note="F">F</div>
+        <div class="key black" data-note="F">F#</div>
+        <div class="key white" data-note="G">G</div>
+        <div class="key black" data-note="G">G#</div>
+        <div class="key white" data-note="A">A</div>
+        <div class="key black" data-note="A">A#</div>
+        <div class="key white" data-note="B">B</div>
+        <div class="key white" data-note="C">C</div>
+        <div class="key black" data-note="C">C#</div>
+        <div class="key white" data-note="D">D</div>
+        <div class="key black" data-note="D">D#</div>
+        <div class="key white" data-note="E">E</div>
+        <div class="key white" data-note="F">F</div>
+        <div class="key black" data-note="F">F#</div>
+        <div class="key white" data-note="G">G</div>
+        <div class="key black" data-note="G">G#</div>
+        <div class="key white" data-note="A">A</div>
+        <div class="key black" data-note="A">A#</div>
+        <div class="key white" data-note="B">B</div>
+      </div>
+    </div>
+    
+    <!-- Importa o arquivo JavaScript externo para adicionar funcionalidades ao piano -->
+    <script src="script.js"></script>
+  </body>
+</html>
