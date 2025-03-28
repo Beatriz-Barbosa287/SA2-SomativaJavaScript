@@ -1,0 +1,119 @@
+/* Estilos para o body (corpo da página) */
+body {
+    /* Utiliza o modelo de layout flexbox para centralizar o conteúdo */
+    display: flex;
+    
+    /* Alinha o conteúdo centralizado horizontalmente */
+    justify-content: center;
+    
+    /* Alinha o conteúdo centralizado verticalmente */
+    align-items: center;
+    
+    /* Define a altura do body para 100% da altura da tela */
+    height: 100vh;
+    
+    /* Define o fundo da página como preto */
+    background-color: #000000;
+    
+    /* Define a fonte da página como Arial, ou sans-serif se Arial não estiver disponível */
+    font-family: 'Arial', sans-serif;
+    
+    /* Remove a margem padrão do body */
+    margin: 0;
+}
+
+/* Estilos para o contêiner que segura as luzes do semáforo */
+.container {
+    /* Utiliza o layout flexbox dentro do container */
+    display: flex;
+    
+    /* Organiza os itens (as luzes) em uma coluna */
+    flex-direction: column;
+    
+    /* Alinha as luzes no centro horizontalmente */
+    align-items: center;
+    
+    /* Alinha as luzes no centro verticalmente */
+    justify-content: center;
+    
+    /* Define um espaçamento de 15px entre as luzes */
+    gap: 15px;
+}
+
+/* Estilos para cada uma das luzes do semáforo */
+.container span {
+    /* Define os spans como elementos de bloco, permitindo largura e altura */
+    display: block;
+    
+    /* Define o tamanho das luzes como 70px de largura e altura */
+    width: 70px;
+    height: 70px;
+    
+    /* Torna as luzes circulares, com bordas arredondadas */
+    border-radius: 60%;
+    
+    /* Adiciona uma transição suave para transformações e sombras ao longo de 0.3 segundos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Define a borda preta ao redor de cada luz */
+    border: 2px solid black; /* Borda preta */
+}
+
+/* Espaço entre as luzes (a margem é aplicada entre os spans consecutivos) */
+.container span + span {
+    margin-top: 15px;
+}
+
+/* Estilo específico para a luz vermelha */
+.vermelho {
+    /* Define o fundo da luz vermelha */
+    background: #d50000;
+}
+
+/* Estilo específico para a luz amarela */
+.amarelo {
+    /* Define o fundo da luz amarela */
+    background: #FFD600;
+}
+
+/* Estilo específico para a luz verde */
+.verde {
+    /* Define o fundo da luz verde */
+    background: #558B2F;
+}
+
+/* Estilo para quando a luz vermelha está ativa (ligada) */
+.vermelho-ativo {
+    /* Muda a cor de fundo para um vermelho mais brilhante */
+    background: #FF1744;
+    
+    /* Adiciona uma sombra de brilho ao redor da luz vermelha */
+    box-shadow: 0 0 20px 5px rgba(255, 23, 68, 0.7);
+    
+    /* Aumenta o tamanho da luz vermelha para destacá-la */
+    transform: scale(1.1);
+}
+
+/* Estilo para quando a luz amarela está ativa (ligada) */
+.amarelo-ativo {
+    /* Muda a cor de fundo para um amarelo mais brilhante */
+    background: #FFEA00;
+    
+    /* Adiciona uma sombra de brilho ao redor da luz amarela */
+    box-shadow: 0 0 20px 5px rgba(255, 234, 0, 0.7);
+    
+    /* Aumenta o tamanho da luz amarela para destacá-la */
+    transform: scale(1.1);
+}
+
+/* Estilo para quando a luz verde está ativa (ligada) */
+.verde-ativo {
+    /* Muda a cor de fundo para um verde mais brilhante */
+    background: #76FF03;
+    
+    /* Adiciona uma sombra de brilho ao redor da luz verde */
+    box-shadow: 0 0 20px 5px rgba(118, 255, 3, 0.7);
+    
+    /* Aumenta o tamanho da luz verde para destacá-la */
+    transform: scale(1.1);
+}
