@@ -5,11 +5,15 @@ body {
     display: flex; /* Usa o modelo de layout flexbox para organizar os elementos. */
     align-items: center; /* Centraliza o conteúdo verticalmente no corpo da página. */
     justify-content: center; /* Centraliza o conteúdo horizontalmente no corpo da página. */
+    text-align: center;
     background-color: #96acc2; /* Define uma cor de fundo azul claro para a página. */
 }
 
 .piano {  
     display: flex; /* Define o layout das teclas como um flexbox, garantindo que fiquem lado a lado. */
+}
+h5{
+    text-align: center;
 }
 
 .key {  
